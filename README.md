@@ -31,13 +31,14 @@
 
 ## About
 
-discord.js is a powerful [Node.js](https://nodejs.org) module that allows you to easily interact with the
+memecord.js is a memeful [Node.js](https://nodejs.org) module that allows you to memefully interact with the
 [Discord API](https://discord.com/developers/docs/intro).
 
 - Object-oriented
 - Predictable abstractions
 - Performant
 - 100% coverage of the Discord API
+- 1000% not working
 
 ## Installation
 
