@@ -48,7 +48,7 @@ class APIMessage {
    */
   get isWebhook() {
     const Webhook = require('./Webhook');
-    const WebhookClient = require('../client/WebhookClient');
+    const WebhookClient = require('../boi/WebhookBoi');
     return this.target instanceof Webhook || this.target instanceof WebhookClient;
   }
 
@@ -366,7 +366,7 @@ class APIMessage {
   static create(target, content, options, extra = {}) {
     const Interaction = require('./Interaction');
     const Webhook = require('./Webhook');
-    const WebhookClient = require('../client/WebhookClient');
+    const WebhookClient = require('../boi/WebhookBoi');
 
     const isWebhook = target instanceof Interaction || target instanceof Webhook || target instanceof WebhookClient;
     const transformed = this.transformOptions(content, options, extra, isWebhook);
